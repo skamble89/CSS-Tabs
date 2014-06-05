@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			div.tab{
+				display: inline-block;
+				vertical-align: top;
+			}
+		
+			div div{
+				display: none;
+			}
+			
+			div:target div{
+				position: absolute;
+				left:0;				
+				display:block;
+			}
+			
+			div:target a{
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>				
+		<div class="tab" id="one">
+			<h3><a href="#one">One</a></h3>
+			<div>
+				One Content
+			</div>			
+		</div>		
+		<div class="tab" id="two">
+			<h3><a href="#two">Two</a></h3>
+			<div>
+				Two Content
+			</div>
+		</div>
+	</body>
+</html>
